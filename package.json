@@ -1,0 +1,26 @@
+{
+  "name": "voting",
+  "version": "1.0.0",
+  "description": "App for RPI Senators to vote during meetings and publicize their voting record",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtg/senate-voting.git"
+  },
+  "author": "David Raab and Mason Cooper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wtg/senate-voting/issues"
+  },
+  "homepage": "https://github.com/wtg/senate-voting#readme",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
