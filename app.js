@@ -9,7 +9,12 @@ app.set('view engine', 'ejs'); // use either jade or ejs
 
 // index page
 app.get('/', function(req, res) {
-  res.render('view\index');
+  res.render('pages/index');
+});
+
+// about page
+app.get('/about', function(req, res) {
+  res.render('pages/about');
 });
      
 // instruct express to server up static assets
