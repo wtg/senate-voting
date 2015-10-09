@@ -26,6 +26,11 @@ The RPI Student Government elections moved to electronic voting last year. The s
 ## Proving the Vote
 An issue often found with electronic voting is that the votes could be tamperred with without physical evidence or proof that results were altered. Our voting platform wishes to issue each voter an anonymous key. 
 
-Developers:
-@draab
-@not-inept
+## Credits
+
+This project was created for use by the Rensselaer Union Student Senate by the Web Technologies Group.
+
+### Developers
+
+* [David Raab](http://github.com/draab)
+* [Mason Cooper](http://github.com/not-inept)
