@@ -1,0 +1,26 @@
+<template name="meeting">
+  <div class="row">
+    <div class="span12 meeting">
+      <h4 class="name">{{name}}</h4>
+      <div class="agenda-items {{#if currentUserIsFacilitator}}draggable{{/if}}">
+        {{#each agendaItems}}
+          {{> agendaItem}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  {{#if currentUserIsFacilitator}}
+    <div class="row">
+      <div class="span12 addAgendaItem">
+        {{> addAgendaItem}}
+      </div>
+    </div>
+  {{/if}}
+</template>
+
+<template name="addMeeting">
+  <form>
+    <label>Name: <input type="text" class="name" /></label>
+    <button type="submit">Add</button>
+  </form>
+</template>

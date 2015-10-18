@@ -1,0 +1,12 @@
+[
+  {
+    "email": "test@example.com",
+    "isFacilitator": true
+  },
+  {
+    "email": "another@example.com"
+  },
+  {
+    "email": "foobar@example.com"
+  }
+]

@@ -1,0 +1,34 @@
+<template name="motion">
+  <div class="motion {{#if highlighted}}highlighted{{/if}}">
+    <div class="body">
+      <h6 class="motion-text">{{motion}}</h6>
+      <div class="progress">
+        <div class="bar bar-success" style="width: 35%;"></div>
+        <div class="bar bar-danger" style="width: 20%;"></div>
+        <div class="bar bar-warning" style="width: 10%;"></div>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <td class="pros">
+          {{> sharejsText docid=pros}}
+        </td>
+        <td class="cons">
+          {{> sharejsText docid=cons}}
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="notes">
+          {{> sharejsText docid=notes}}
+        </td>
+      </tr>
+    </table>
+  </div>
+</template>
+
+<template name="addMotion">
+  <form>
+    <label>Motion<textarea class="motion"></textarea></label>
+    <button type="submit">Add motion</button>
+  </form>
+</template>
