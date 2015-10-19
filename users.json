@@ -10,6 +10,8 @@
     "isFacilitator": true
   },
   {
-    "email": "foobar@example.com"
+    "name": "Justin Etzine",
+    "email": "etzinj@rpi.edu",
+    "isFacilitator": true
   }
 ]
