@@ -4,7 +4,7 @@ Meteor.methods
     check agendaItemId, DocumentId
     check motion, NonEmptyString
 
-    throw new Meteor.Error 401, "User not signed in." unless @userId
+    throw new Meteor.Error 401, "User not signed in. Please sign in using rpi-issued email address." unless @userId
 
     # TODO: Verify that meetingId and agendaItemId exist and that agendaItemId is really an agendaItemId of meetingId
 

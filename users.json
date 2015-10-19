@@ -1,10 +1,13 @@
 [
   {
-    "email": "test@example.com",
+    "name": "Marcus Flowers",
+    "email": "gm@rpi.edu",
     "isFacilitator": true
   },
   {
-    "email": "another@example.com"
+    "name": "Joshua Rosenfield",
+    "email": "rosenj5@rpi.edu",
+    "isFacilitator": true
   },
   {
     "email": "foobar@example.com"
