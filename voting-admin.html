@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="RPI Senate meeting voting system">
+  <meta name="author" content="RPI Web Technologies Group">
+  <link rel="icon" href="img/favicon.ico">
+
+  <title>RPI SVS Main Dashboard</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/starter-template.css" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">RPI SVS</a> <!-- I love using acronyms -->
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <!-- have something so these only appear if you are signed in -->
+          <li><a href="vote.html">Vote</a></li>
+          <li class="active"><a href="voting-admin.html">Voting Admin</a></li>
+          <li><a href="#queue">Enter Queue</a></li>
+          <!-- There should be if_authenticated type of attribute AFAIK  -->
+          <li><a href="#contact">Sign In</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Current Senators <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Meeting Tools</a></li>
+            <li><a href="#">Discussion Queue</a></li>
+            <li><a href="#">Individual Statistics</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Admin Things</h1>
+
+          <h2 class="sub-header">Current Senators</h2>
+          <p>Pulled directly from the CMS API. Update there and it will reflect here. Click on a person's name a page and their history and attendance and states will appear.</p>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Constituency</th>
+                  <th>Name</th> <!-- Link to individual stats and voting history. -->
+                  <th>Posistion</th>
+                  <th>Admin</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2019</td>
+                  <td>David Raab</td>
+                  <td>Senator</td>
+                  <td>False</td>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td>Marcus Flowers</td>
+                  <td>Grand Marshal</td>
+                  <td>True</td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td>Justin Etzine</td>
+                  <td>WebTech Chairman</td>
+                  <td>True</td>
+                </tr>
+                <tr>
+                  <td>2017</td>
+                  <td>Paul Ilori</td>
+                  <td>RnE Chairman</td>
+                  <td>False</td>
+                </tbody>
+              </table>
+            </div>
+
+            <h2 class="sub-header">Meeting Tools</h2>
+            <div class="row placeholders">
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <button type="button" class="btn btn-default">Start/End Meeting</button>
+                <p>Meeting started at <b>7:00 PM on a Tuesday</b></p>
+              </div>
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <button type="button" class="btn btn-default">Mew Motion</button>
+                <p>Create a new motion and enable voting for members</b></p>
+              </div>
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <button type="button" class="btn btn-default">Meeting History</button>
+                <p>Look at prior meetings. Data for current meeting is displayed below by default.</b></p>
+              </div>
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <button type="button" class="btn btn-default">Run Report</button>
+                <p>Create a meeting report on Flagship</b></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="copyright">Copyright (c) 2015 RPI Web Technologies Group. <br /> All Rights Reserved.</p>
+  </div><!-- /.container -->
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
