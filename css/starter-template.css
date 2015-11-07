@@ -9,3 +9,6 @@ body {
   text-align: center;
   font-size: 10;
 }
+tr {
+  text-align: left;
+}
